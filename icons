@@ -1,0 +1,13 @@
+<ion-icon name="reorder-three-outline"></ion-icon> (three lines)
+<ion-icon name="reorder-three"></ion-icon> (filled)
+
+<ion-icon name="ellipsis-vertical-outline"></ion-icon> (three vertical dots)
+<ion-icon name="ellipsis-vertical"></ion-icon> (filled)
+
+<ion-icon name="search-circle-outline"></ion-icon> (serch icon) Fonts fonts
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>

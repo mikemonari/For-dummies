@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="index.js"></script>
+
+    <title>MBCHB FOR DUMMIES</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="amayo dropdown">
+        <button class="dropbtn" onclick="myFunction()"><ion-icon name="reorder-three" class="menu_icon"></ion-icon></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="SCHOOL GUIDE">SCHOOL GUIDE</a>
+          <a href="#LEVEL">LEVEL</a>
+          <a href="#PAST PAPERS">PAST PAPERS</a>
+          <a href="#ANNOUNCEMENTS">ANNOUCEMENTS</a>
+        </div>
+      </div>
+
+      <div class="main_nav">
+        <ul class="main_nav_list">
+          <li><a href="#" class="main_nav_link">SCHOOL GUIDE</a></li>
+          <li><a href="#" class="main_nav_link">PAST PAPERS</a></li>
+          <li><a href="#" class="main_nav_link">ANNOUNCEMENTS</a></li>
+          <li><a href="#" class="main_nav_link">ABOUT US</a></li>
+          <!-- trial -->
+          <div class="search-container">
+            <form action="/search" method="get">
+              <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+              <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+            </form>
+          </div>
+          <!-- <ion-icon
+            name="search-circle-outline"
+            class="search_icon pad_color"
+          ></ion-icon> -->
+        </ul>
+      </div>
+    </header>
+    
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero_text">
+            <h1 class="primary_heading">WELCOME TO MBCHB FOR DUMMIES!</h1>
+            <img src="photos/ecg.jpg" class="ecg_image" alt="ecg image" />
+            <p class="hero_description">
+              <!-- Ready to ace your exams with ease? Sign up now to unlock a
+              treasure trove of study materials and past papers! Your academic
+              success is just a click away! -->
+              From Scrubs to Scholars: Your Ultimate Study Companion, Crafted
+              with Care by your very own!
+            </p>
+
+            <a href="#cta" class="btn btn-full margin-right-sm">STUDY NOW</a>
+          </div>
+          <div class="hero_image_box">
+            <picture>
+              <source srcset="photos/logo.jpg" type="image/png" />
+
+              <img
+                src="photos/logo.jpg"
+                class="logo_image"
+                alt="medical logo image"
+              />
+            </picture>
+          </div>
+        </div>
+      </section> 
+      <!-- SECTION PLAN -->
+      <section class="course-plan">
+        <div class="container center-text">
+          <span class="sub-heading">Pricing</span>
+          <h2 class="secondary-heading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni placeat vel voluptate</h2>
+        </div>
+        <div class="container grid grid--3-col">
+          <div class="plan">
+            <div class="plan-text">
+              <div class="plan-tag">
+              <span class="tag tag--free">Free</span>
+            </div>
+            <p class="plan-title">Free Plan</p>
+            <p class="plan-content">you will have access to:</p>
+              <ul class="plan-attributes">
+                <li class="plan-attribute">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>Lorem ipsum</span>
+                </li>
+                <li class="plan-attribute">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Lorem ipsum</span>
+                </li>
+                <li class="plan-attribute">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Lorem ipsum</span>
+                </li>
+                <li class="plan-attribute">
+                  <ion-icon
+                    class="list-icon"
+                    name="close-outline"
+                  ></ion-icon>
+                  <span></span>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="plan-text">
+            <div class="plan-tag">
+            <span class="tag tag--free">Paid</span>
+          </div>
+          <p class="plan-title">Paid Plan</p>
+          <p class="plan-content">you will have access to:</p>
+            <ul class="plan-attributes">
+              <li class="plan-attribute">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span> Lorem ipsum</span>
+              </li>
+              <li class="plan-attribute">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Lorem ipsum</span>
+              </li>
+              <li class="plan-attribute">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Lorem ipsum</span>
+              </li>
+              <li class="plan-attribute">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Question bank</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+          <div class="pay-method">
+            <img >
+          </div>
+        </div>
+      </section>
+      <!-- SECTION CALL TO ACTION -->
+      <section>
+        <div class="section_cta" id="cta">
+          <div class="container">
+            <div class="cta">
+              <div class="cta_text_box">
+                <h2 class="secondary_heading">Start your journey!</h2>
+                <p class="cta_text">
+                  Ready to ace your exams with ease? Sign up now to unlock a
+                  treasure trove of study materials and past papers! Your
+                  academic success is just a click away!
+                </p>
+                <form class="cta_form" action="#" name="sign-up" netlify>
+                  <div>
+                    <label for="full_name">Full Name</label>
+                    <input
+                      id="full_name"
+                      type="text"
+                      placeholder="John Doe"
+                      name="full_name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="address">Email Address</label>
+                    <input
+                      id="address"
+                      type="text"
+                      placeholder="johndoe@gmail.com"
+                      name="address"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="level">Level</label>
+                    <select id="level" name="level" required>
+                      <option value="">Please pick:</option>
+                      <option value="level 1">Level 1</option>
+                      <option value="level 2">Level 2</option>
+                      <option value="level 3">Level 3</option>
+                      <option value="level 4">Level 4</option>
+                      <option value="level 5">Level 5</option>
+                      <option value="level 6">Level 6</option>
+                    </select>
+                  </div>
+
+                  <button class="sign_up_button">Sign up</button>
+                  <!-- <ion-icon name="logo-google" class="google_icon"></ion-icon> -->
+                </form>
+              </div>
+              <div
+                class="cta_image_box"
+                role="image"
+                aria-label="Student studying"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+    </main>
+  </body>
+</html>
