@@ -517,33 +517,33 @@ body {
 }
 .copyright {
   margin-top: 2rem;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 .logo-icon {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 2.4rem;
+  width: 2.4rem;
   color: #555;
 }
 .contacts {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-style: normal;
   line-height: 1.5;
 }
 .contacts p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #767676;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
 }
 .contacts:link,
 .contacts:visited {
   text-decoration: none;
 }
 .footer-heading {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   /* line-height: 1.5; */
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .footer-nav {
   list-style: none;
@@ -554,7 +554,7 @@ body {
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
-  font-size: 0.96rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #767676;
   transition: all 0.3s;
