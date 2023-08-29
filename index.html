@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="queries.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,8 +31,8 @@
   <body>
     <header class="header">
       <div class="amayo dropdown">
-        <button class="dropbtn" onclick="myFunction()"><ion-icon name="reorder-three" class="menu_icon"></ion-icon></button>
-        <div id="myDropdown" class="dropdown-content">
+        <button class="dropbtn" onclick="myFunction()"></button>
+        <div id="Dropdown" class="dropdown-content">
           <a href="SCHOOL GUIDE">SCHOOL GUIDE</a>
           <a href="#LEVEL">LEVEL</a>
           <a href="#PAST PAPERS">PAST PAPERS</a>
@@ -41,10 +42,10 @@
 
       <div class="main_nav">
         <ul class="main_nav_list">
-          <li><a href="#" class="main_nav_link">SCHOOL GUIDE</a></li>
+          <li><a href="#Plans" class="main_nav_link">PLANS</a></li>
           <li><a href="#" class="main_nav_link">PAST PAPERS</a></li>
-          <li><a href="#" class="main_nav_link">ANNOUNCEMENTS</a></li>
           <li><a href="#" class="main_nav_link">ABOUT US</a></li>
+          <li><a href="#cta" class="main_nav_link nav_cta">START LEARNING</a></li>
           <!-- trial -->
           <div class="search-container">
             <form action="/search" method="get">
@@ -89,19 +90,24 @@
           </div>
         </div>
       </section> 
-      <!-- SECTION PLAN -->
-      <section class="course-plan">
+      <!-- SECTION PRICING -->
+      <section class="course-plan" id="Plans">
         <div class="container center-text">
           <span class="sub-heading">Pricing</span>
           <h2 class="secondary-heading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni placeat vel voluptate</h2>
         </div>
-        <div class="container grid grid--3-col">
-          <div class="plan">
-            <div class="plan-text">
+        <div class="container grid grid-plan">
+          <div class="plan free-plan">
+            <!-- <div class="plan-text">
               <div class="plan-tag">
               <span class="tag tag--free">Free</span>
             </div>
-            <p class="plan-title">Free Plan</p>
+            <p class="plan-title">Free Plan</p> -->
+            <header class="plan-header">
+              <p class="plan-name">Starter</p>
+              <p class="plan-price"><span>ksh</span>0</p>
+              <p class="plan-text-paid">one time subscription</p>
+            </header>
             <p class="plan-content">you will have access to:</p>
               <ul class="plan-attributes">
                 <li class="plan-attribute">
@@ -131,13 +137,18 @@
                 </li>
               </ul>
           </div>
-        </div>
+       
         <div class="plan">
-          <div class="plan-text">
+          <!-- <div class="plan-text">
             <div class="plan-tag">
             <span class="tag tag--free">Paid</span>
           </div>
-          <p class="plan-title">Paid Plan</p>
+          <p class="plan-title">Paid Plan</p> -->
+          <header class="plan-header">
+            <p class="plan-name">Premium</p>
+            <p class="plan-price"><span>ksh</span>#</p>
+            <p class="plan-text-paid">one time subscription</p>
+          </header>
           <p class="plan-content">you will have access to:</p>
             <ul class="plan-attributes">
               <li class="plan-attribute">
@@ -168,10 +179,7 @@
             </ul>
         </div>
       </div>
-          <div class="pay-method">
-            <img >
-          </div>
-        </div>
+     
       </section>
       <!-- SECTION CALL TO ACTION -->
       <section>
@@ -232,7 +240,59 @@
           </div>
         </div>
       </section>
-     
+
+      <!-- SECTION FOOTER -->
+      <footer class="footer">
+        <div class="container grid grid-footer">
+          <div class="logo-col">
+              <ul class="social-links">
+                <li> <a href="#"><ion-icon name="logo-instagram" class="logo-icon"></ion-icon></a></li>
+                <li> <a href="#"><ion-icon name="logo-facebook" class="logo-icon"></ion-icon></a></li>
+                <li> <a href="#"><ion-icon name="logo-twitter" class="logo-icon"></ion-icon></a></li>
+              </ul>
+              <p class="copyright">Copyright &copy; <span class="year">2023</span> by Dummies Inc. All rights reserved.</p>
+            </div>
+        
+        <div class="Adress-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            
+            <p>623 Harrison St., 2nd Floor, San Francisco, CA 9410</p> 
+            <p><a href="tel:415-201-637" class="footer-link">415-201-6370</a></p>
+             <p><a href="mailto:hello@dummies.com" class="footer-link">hello@dummies.com</a> </p>
+
+          </address>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li> <a href="#" class="footer-link" >Create account</a></li>
+            <li> <a href="#" class="footer-link" >Sign in</a></li>
+            <li> <a href="#" class="footer-link" >iOS app</a></li>
+            <li> <a href="#" class="footer-link" >Android app</a></li>
+          </ul>
+        </div>
+        <!-- <div class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li> <a href="#" class="footer-link" >About Dummies</a></li>
+            <li> <a href="#" class="footer-link" >For Business</a></li>
+            <li> <a href="#" class="footer-link" >partners</a></li>
+            <li> <a href="#" class="footer-link" >Careers</a></li>
+          </ul>
+        </div> -->
+
+        <div class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            
+            <li> <a href="#" class="footer-link" >Help center</a></li>
+            <li> <a href="#" class="footer-link" >Privacy & terms</a></li>
+          
+          </ul>
+        </div>
+      </div>
+      </footer>
     </main>
   </body>
 </html>
