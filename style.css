@@ -7,7 +7,7 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -97,9 +97,12 @@ body {
   justify-self: center;
   width: 100%;
 }
+.hero_image_box img {
+  max-width: 100%;
+}
 .ecg_image {
-  width: 20rem;
-  height: 9rem;
+  width: 25rem;
+  height: 12rem;
   margin-bottom: 3.2rem;
 }
 /* .logo_image {
@@ -191,11 +194,6 @@ body {
   gap: 4.8rem;
 }
 /* LINKS */
-/* .amayo_link {
-  text-decoration: none;
-  color: #014661;
-  font-weight: 700;
-} */
 
 .main_nav_link:link,
 .main_nav_link:visited {
@@ -436,70 +434,6 @@ body {
   width: 2rem;
   color: #00a6e8b2;
 }
-/* trial */
-.search-container {
-  position: relative;
-  display: inline-block;
-  height: 23px;
-  width: 30px;
-  vertical-align: bottom;
-}
-
-.mglass {
-  display: inline-block;
-  pointer-events: none;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-}
-
-.searchbutton {
-  position: absolute;
-  font-size: 22px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.search:focus + .searchbutton {
-  transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  background-color: white;
-  color: black;
-}
-
-.search {
-  position: absolute;
-  left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
-  background-color: white;
-  outline: none;
-  border: none;
-  padding: 0;
-  width: 0;
-  height: 100%;
-  z-index: 10;
-  transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-}
-
-.search:focus {
-  width: 300px; /* Bar width+1px */
-  padding: 0 16px 0 0;
-}
-
-.expandright {
-  left: auto;
-  right: 49px; /* Button width-1px */
-}
-
-.expandright:focus {
-  padding: 0 0 0 16px;
-}
 
 /* SECTION FOOTER */
 .footer {
@@ -562,4 +496,20 @@ body {
 .footer-link:hover,
 .footer-link:active {
   color: #222;
+}
+
+/* MOBILE NAVIGATION */
+.menu-icon {
+  height: 4rem;
+  width: 4rem;
+  color: #222;
+}
+.menu-icon[name="close-outline"] {
+  display: none;
+}
+.btn-mobile-nav {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  display: none;
 }
