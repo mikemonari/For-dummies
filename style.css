@@ -17,6 +17,9 @@ body {
   overflow-x: hidden;
 }
 /* SECTION HEADER */
+.icon1 {
+  height: 3.4rem;
+}
 .header {
   display: flex;
   justify-content: space-between;
