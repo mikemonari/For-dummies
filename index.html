@@ -47,9 +47,9 @@
         
         <ul class="main_nav_list">
           <li><a href="#Plans" class="main_nav_link">PLANS</a></li>
-          <li><a href="#" class="main_nav_link">HOW IT WORKS</a></li>
-          <li><a href="#" class="main_nav_link">ABOUT US</a></li>
-          <li><a href="#cta" class="main_nav_link nav_cta">START LEARNING</a></li>
+          <li><a href="#how" class="main_nav_link">HOW IT WORKS</a></li>
+          <li><a href="#about" class="main_nav_link">ABOUT US</a></li>
+          <li><a href="" class="main_nav_link nav_cta" onclick="redirectToLoginPage()">START LEARNING</a></li>
       </ul>
     </nav>
         <button class="btn-mobile-nav">
@@ -73,7 +73,7 @@
               with Care by your very own!
             </p>
 
-            <a href="#cta" class="btn btn-full margin-right-sm">STUDY NOW</a>
+            <a href="" class="btn btn-full" onclick="redirectToLoginPage()">STUDY NOW</a>
           </div>
           <div class="hero_image_box">
             <picture>
@@ -179,8 +179,83 @@
       </div>
      
       </section>
+
+      <!-- SECTION HOW IT WORKS -->
+      <section class="section-how" id="how">
+        <div class="container center-text">
+          <span class="sub-heading ">HOW IT WORKS</span>
+          <h2 class="secondary-heading">How to sign-up: Its as easy as 1-2-3</h2>
+        </div>
+        <div class="container grid grid--3-col">
+            <div class="step-1">
+              <!-- <h2 class="heading-tertiary center-text step-heading">step 1</h2> -->
+              <div class="step-img"></div>
+              <div class="step-text">
+                <h3 class="steps-head">01 &nbsp Visit the Website</h3>
+                <p class="step-content">Open your web browser and type in the URL <strong>https://mbchbfordummies.live</strong>. Press "Enter" to access the site.
+                Once you are in the website, Press button <strong>STUDY NOW</strong>.This will take you to the portal to sign up.</p>
+              </div>
+            </div>
+            <div class="step-2">
+              <!-- <h2 class="heading-tertiary center-text step-heading">step 2</h2> -->
+              <div class="step-img"></div>
+              <div class="step-text">
+                <h3 class="steps-head">02 &nbsp Create an Account</h3>
+                <div class="step-content">
+                  <p >Look for "Create an Account" button located at the bottom of the page,
+                  press the button and Fill in the required fields with accurate information
+                  and press button <strong>Create my new account</strong>
+                </p>
+              </div>
+                
+              </div>
+            </div>
+            <div class="step-3">
+              <!-- <h2 class="heading-tertiary center-text step-heading">step 3</h2> -->
+              <div class="step-img"></div>
+              <div class="step-txt">
+                <h3 class="steps-head">03 &nbsp Log in</h3>
+                <p class="step-content">You can now log in to the website using your username and password 
+                  to access your new account.</p>
+              </div>
+            </div>
+        </div>
+
+      </section>
+
+
+      <!-- SECTION ABOUT US -->
+      <section class="section-about-us" id="about">
+        <div class="container center-text">
+          <span class="sub-heading ">ABOUT US</span>
+          
+        </div>
+        <div class="container grid grid--2-col about">
+          <div class="about-img">
+            <picture>
+              <source srcset="photos/about.png" type="image/png" />
+
+              <img
+                src="photos/about.png"
+                class="about-image"
+                alt="About us image"
+              />
+            </picture>
+          </div>
+          <div class="about-txt">
+            <p>"Born from the passion and drive of fellow medical students, our platform stands as a testament to the adage, 'By the students, for the students.
+              ' We navigated the challenging corridors of medical school and recognized a significant void when it came to comprehensive, student-friendly resources.
+               Rather than waiting for solutions, we took the stethoscope into our own hands, crafting a space tailored to the unique needs and demands of medical academia. 
+              Our mission? To bridge the gap, ensuring every budding doctor has access to the tools they need to thrive. Dive in, and let's flourish together in this noble 
+              journey of healing and learning!"</p>
+          </div>
+        </div>
+      </section>
+
+
+
       <!-- SECTION CALL TO ACTION -->
-      <section>
+      <!-- <section>
         <div class="section_cta" id="cta">
           <div class="container">
             <div class="cta">
@@ -225,8 +300,8 @@
                     </select>
                   </div>
 
-                  <button class="sign_up_button">Sign up</button>
-                  <!-- <ion-icon name="logo-google" class="google_icon"></ion-icon> -->
+                  <button onclick="redirectToLoginPage()" class="sign_up_button">Sign up</button>
+                  <ion-icon name="logo-google" class="google_icon"></ion-icon>
                 </form>
               </div>
               <div
@@ -237,7 +312,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       <!-- SECTION FOOTER -->
       <footer class="footer">
@@ -264,8 +339,8 @@
         <div class="nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
-            <li> <a href="#" class="footer-link" >Create account</a></li>
-            <li> <a href="#" class="footer-link" >Sign in</a></li>
+            <li> <a href="#" class="footer-link" onclick="redirectToLoginPage()">Create account</a></li>
+            <li> <a href="#" class="footer-link" onclick="redirectToLoginPage()">Sign in</a></li>
             <li> <a href="#" class="footer-link" >iOS app</a></li>
             <li> <a href="#" class="footer-link" >Android app</a></li>
           </ul>

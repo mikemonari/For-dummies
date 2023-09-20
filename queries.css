@@ -206,6 +206,12 @@
   .paid-plan {
     justify-self: center;
   }
+  .grid--3-col {
+    grid-template-columns: 1fr;
+  }
+  .grid--2-col {
+    grid-template-columns: 1fr;
+  }
   .cta {
     grid-template-columns: 1fr;
   }

@@ -17,6 +17,12 @@ window.onclick = function (event) {
   }
 };
 
+// Linking to portal
+function redirectToLoginPage() {
+  //redirect user to login page in portal
+  window.location.href = "/portal";
+}
+
 ///////////////////////////////////////////////////////////
 // Set current year
 const yearEl = document.querySelector(".year");
